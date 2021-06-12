@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js" type="text/javascript"></script>
+    <script src="./js/ajax.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#boton").click(function () {
+          $("#answer").fadeIn(900);
+          $("#text").fadeIn(200);
+        });
+      });
+    </script>
+    <title>Multiplicador</title>
+  </head>
+
+  <body id="canvas-wrapper">
+    <button id="darkMode" class="cambiar" onclick="CambiarImg()">
+      Modo Oscuro
+    </button>
+    <button id="cuenta">Recibir Cuenta</button>
+
+    <div class="calculadora">
+      <section class="resultado">
+        <h2 style="display: none" id="text"></h2>
+        <h2 style="display: none" id="answer"></h2>
+      </section>
+
+      <div class="inputs--calculadora">
+        <div class="multiplicando">
+          <input id="multiplicando" type="number" placeholder="0" />
+        </div>
+        <p class="SimboloPor">X</p>
+        <div class="multiplicador">
+          <input id="multiplicador" type="number" placeholder="0" />
+        </div>
+      </div>
+
+      <div class="botones">
+        <button class="btn--mod" id="boton" onclick="MultiplicarPorX()">
+          =
+        </button>
+      </div>
+    </div>
+
+    <img
+      id="colorImage"
+      draggable="false"
+      style="left: 750px"
+      class="image"
+      src="./img1.gif"
+    />
+  </body>
+</html>

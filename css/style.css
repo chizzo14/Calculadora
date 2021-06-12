@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@font-face {
+  font-family: digital7;
+  src: url("../fuente/digital7.ttf");
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  background-color: #cbc4c4;
+}
+
+.botones {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--mod {
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 0px solid;
+  background-color: #64669c;
+}
+
+.btn--mod:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
+.calculadora {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  border: 2px solid #678bae;
+  border-radius: 10px;
+  width: 340px;
+  height: 300px;
+  margin: auto;
+  background-color: #8ec2d2;
+  box-shadow: 5px 3px 15px black;
+}
+
+.inputs--calculadora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+.SimboloPor {
+  display: flex;
+  margin: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+#multiplicador {
+  font-size: 20px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0px;
+  text-align: center;
+  font-family: digital7;
+  background-color: #ce6a8e;
+}
+
+#multiplicando {
+  font-size: 20px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0px;
+  text-align: center;
+  font-family: digital7;
+  background-color: #ce6a8e;
+}
+
+.resultado {
+  background-color: #efca60;
+  width: 300px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  display: block;
+  border-radius: 10px;
+}
+
+#text {
+  margin: 2px;
+  font-size: 40px;
+  font-family: digital7;
+  color: white;
+}
+
+#answer {
+  margin: 1px;
+  font-family: digital7;
+  color: white;
+}
+
+#colorImage {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  position: center;
+}
+
+#eliminar {
+  margin-top: 6px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-weight: bolder;
+  font-size: 10px;
+  border-radius: 10px;
+  border: 0px solid;
+  background-color: #64669c;
+  cursor: pointer;
+}
+
+#cuenta {
+  position: absolute;
+  margin: 0;
+  height: 50px;
+  background-color: #89888f;
+  border-style: none;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  right: 5px;
+}
+
+#canvas-wrapper.dark-mode {
+  background: #222;
+  color: #cbc4c4;
+}
+.cambiar {
+  height: 50px;
+  background-color: #89888f;
+  border-style: none;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}
